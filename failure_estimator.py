@@ -55,7 +55,7 @@ class HuggingFaceTransformer(Estimator):
 
         training_args = TrainingArguments(
             output_dir='./results',          # output directory
-            num_train_epochs=1,              # total number of training epochs
+            num_train_epochs=5,              # total number of training epochs
             per_device_train_batch_size=8,  # batch size per device during training
             per_device_eval_batch_size=64,   # batch size for evaluation
             learning_rate=5e-05,
